@@ -47,8 +47,9 @@ Using policy based reinforcement learning techniques to control a reacher to rea
    To solve the multiple reacher environment, the average score of the 20 agents must be +30 over 100 consecutive episodes.
    
 ## Part 2: Idea for solving the problem
-   - Algorithm
-   
+   - Algorithm                                                                                                                                                     
+   I adapted the [DDPG algorithm](https://arxiv.org/pdf/1509.02971.pdf) to solve both the single reacher environment and multiple reacher environment.
+   The 
 
 ## Part 3: Project implementation
 
