@@ -29,11 +29,26 @@ Using policy based reinforcement learning techniques to control a reacher to rea
    
    Then the output this time will be pedal == -0.6, steer == -0.05. Each action will be given a specified value.
    
+   The task I am going to solve in this repository is a task with continuous action space.
+   
    **Do not confound the concept of continuing tasks and tasks with continuous action space (sometimes reffered as continuous task)**
 
 ## Part 1: Project description
- 
+   - Single Reacher Environment                                                                                                             
+   In the environment, a double-jointed arm can move to target locations. A reward of +0.1 is provided for each step that the agent's hand is in the goal location. 
+   
+      The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector should be a number between -1 and 1.
+   
+   - Multiple Reacher Environment                                                                                         
+   The multiple environment consists of 20 identical reachers, each with the same set up as the reacher in the single reacher environment.
+   
+   - Solving the environment                                                                                                                   
+   To solve the single reacher environment, the agent must get an average score of +30 over 100 consecutive episodes.
+   To solve the multiple reacher environment, the average score of the 20 agents must be +30 over 100 consecutive episodes.
+   
 ## Part 2: Idea for solving the problem
+   - Algorithm
+   
 
 ## Part 3: Project implementation
 
