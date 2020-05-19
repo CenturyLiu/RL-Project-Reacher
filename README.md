@@ -46,11 +46,30 @@ Using policy based reinforcement learning techniques to control a reacher to rea
    To solve the single reacher environment, the agent must get an average score of +30 over 100 consecutive episodes.
    To solve the multiple reacher environment, the average score of the 20 agents must be +30 over 100 consecutive episodes.
    
-## Part 2: Idea for solving the problem
-   - Algorithm                                                                                                                                                     
-   I adapted the [DDPG algorithm](https://arxiv.org/pdf/1509.02971.pdf) to solve both the single reacher environment and multiple reacher environment.
-   The 
+## Part 2: Idea and implementation
+   - Algorithm                                                                                                                                                      
+   I adapted the [DDPG algorithm](https://arxiv.org/pdf/1509.02971.pdf) to solve both the single reacher environment and multiple reacher environment. 
+   While adating the algorithm, i referenced the [openai ddpg document](https://spinningup.openai.com/en/latest/algorithms/ddpg.html), the [udacity discussion](https://knowledge.udacity.com/questions/98687) (may need a udacity account to have access) and [gcolmen's github](https://github.com/gcolmen/actor-critic-ddpg) as reference.
+   
+   - Implementation detail                                                                                                               
+   For detailed implementation description, see report.md.
+   
+## Part 3: Code navigation
+   - Prerequisite                                                                                                             
+     To run the codes in this repository, please follow instruction on [Udacity deep reinforcement learning](https://github.com/udacity/deep-reinforcement-learning) to setup the environment.
+     After setting up the environment, download the files in this repository and put them into /your path/deep-reinforcement-learning/p2_continuous-control
+     Download the reacher environment for your computer.
+     One agent:
+        - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux.zip)
+        - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher.app.zip)
+        - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86.zip)
+        - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86_64.zip)
+        
+     Multiple agents:
+        - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip)
+        - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher.app.zip)
+        - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86.zip)
+        - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86_64.zip)
 
-## Part 3: Project implementation
 
 ## Part 4: Demonstration of trained agent
