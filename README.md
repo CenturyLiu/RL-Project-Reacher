@@ -70,6 +70,13 @@ Using policy based reinforcement learning techniques to control a reacher to rea
         - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher.app.zip)
         - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86.zip)
         - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86_64.zip)
+        
+   - Solutions
+      - Multi-agent solution
+      
+      - Single agent solution with [Ounoise](https://en.wikipedia.org/wiki/Ornstein%E2%80%93Uhlenbeck_process)
+      
+      - Single agent solution with uncorrelated, mean-zero Gaussian noise  
 
 
 ## Part 4: Demonstration of trained agent
