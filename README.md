@@ -52,7 +52,7 @@ Using policy based reinforcement learning techniques to control a reacher to rea
    While adating the algorithm, i referenced the [openai ddpg document](https://spinningup.openai.com/en/latest/algorithms/ddpg.html), the [udacity discussion](https://knowledge.udacity.com/questions/98687) (may need a udacity account to have access) and [gcolmen's github](https://github.com/gcolmen/actor-critic-ddpg) as reference.
    
    - Implementation detail                                                                                                               
-   For detailed implementation description, see report.pdf.
+   For detailed implementation description, see [report.pdf](https://github.com/CenturyLiu/RL-Project-Reacher/blob/master/report.pdf).
    
 ## Part 3: Code navigation
    - Prerequisite                                                                                                             
