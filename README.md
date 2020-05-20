@@ -52,7 +52,7 @@ Using policy based reinforcement learning techniques to control a reacher to rea
    While adating the algorithm, i referenced the [openai ddpg document](https://spinningup.openai.com/en/latest/algorithms/ddpg.html), the [udacity discussion](https://knowledge.udacity.com/questions/98687) (may need a udacity account to have access) and [gcolmen's github](https://github.com/gcolmen/actor-critic-ddpg) as reference.
    
    - Implementation detail                                                                                                               
-   For detailed implementation description, see report.md.
+   For detailed implementation description, see report.pdf.
    
 ## Part 3: Code navigation
    - Prerequisite                                                                                                             
@@ -72,11 +72,45 @@ Using policy based reinforcement learning techniques to control a reacher to rea
         - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86_64.zip)
         
    - Solutions
-      - Multi-agent solution
+      - OUNoise Multi-agent solution                                                                                                                    
+      package: [ddpg multiple](https://github.com/CenturyLiu/RL-Project-Reacher/tree/master/ddpg_multiple) 
       
-      - Single agent solution with [Ounoise](https://en.wikipedia.org/wiki/Ornstein%E2%80%93Uhlenbeck_process)
+      |File name|description|
+      |---|---|
+      |model.py|implementation of actor and critic network|
+      |ddpg_agent.py|implementation of ddpg agent with OUNoise|
+      |continuous_control.py|main function for training with multiple agent|
+      |watch_agent.py|see the trained agents, the trained weights are stored in the two .pth files|
       
-      - Single agent solution with uncorrelated, mean-zero Gaussian noise  
-
+      ![multiple agents](https://github.com/CenturyLiu/RL-Project-Reacher/blob/master/plots%20and%20demo/multi_OU_108.png)
+      > The OUNoise implementation uses 108 episode to solve the multi-agent environment.
+      
+      - Single agent solution with [OUNoise](https://en.wikipedia.org/wiki/Ornstein%E2%80%93Uhlenbeck_process)                          
+      package: [ddpg single](https://github.com/CenturyLiu/RL-Project-Reacher/tree/master/ddpg_single_3)
+        
+      |File name|description|
+      |---|---|
+      |model.py|implementation of actor and critic network|
+      |ddpg_agent.py|implementation of ddpg agent with OUNoise|
+      |continuous_control.py|main function for training with single agent|
+      |watch_agent.py|see the trained agents, the trained weights are stored in the two .pth files|
+      
+      ![single agent](https://github.com/CenturyLiu/RL-Project-Reacher/blob/master/plots%20and%20demo/single_OU_592.png)
+      > The OUNoise implementation uses 592 episode to solve the single-agent environment.
+      
+      - Single agent solution with uncorrelated, mean-zero Gaussian noise                                            
+      package: [ddpg_single_Gaussian_noise](https://github.com/CenturyLiu/RL-Project-Reacher/tree/master/ddpg_single_normal_distribution_noise_2)
+      
+      |File name|description|
+      |---|---|
+      |model.py|implementation of actor and critic network|
+      |ddpg_agent.py|implementation of ddpg agent with OUNoise|
+      |continuous_control.py|main function for training with single agent|
+      |watch_agent.py|see the trained agents, the trained weights are stored in the two .pth files|
+      
+      ![single agent with white noise](https://github.com/CenturyLiu/RL-Project-Reacher/blob/master/plots%20and%20demo/single_gauss_192.png)
+      > The gaussian noise implementation solves the single agent envrionment in 192 episodes.
+      
+      Please remember to change the file path to the reacher environment in "continuous_control.py" before use.
 
 ## Part 4: Demonstration of trained agent
