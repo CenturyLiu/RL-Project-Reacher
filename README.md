@@ -115,7 +115,7 @@ Using policy based reinforcement learning techniques to control a reacher to rea
       ![single agent with white noise](https://github.com/CenturyLiu/RL-Project-Reacher/blob/master/plots%20and%20demo/single_gauss_192.png)
       > The gaussian noise implementation solves the single agent envrionment in 192 episodes.
       
-      Please remember to change the file path to the reacher environment in "continuous_control.py" before use.
+      Please remember to change the file path to the reacher environment in "continuous_control.py" and "watch_agent.py" before use.
 
 ## Part 4: Demonstration of trained agent
 ![multi agent demo](https://github.com/CenturyLiu/RL-Project-Reacher/blob/master/plots%20and%20demo/multi_agent_reacher.gif)
