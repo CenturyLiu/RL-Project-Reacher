@@ -34,6 +34,10 @@ Using policy based reinforcement learning techniques to control a reacher to rea
    **Do not confound the concept of continuing tasks and tasks with continuous action space (sometimes reffered as continuous task)**
 
 ## Part 1: Project description
+![reacher environment](https://github.com/CenturyLiu/RL-Project-Reacher/blob/master/plots%20and%20demo/reacher.gif)
+> the reacher environment. Image source: [Udacity deep-reinforcement-learning/p2-continuous-control](https://github.com/udacity/deep-reinforcement-learning/tree/master/p2_continuous-control)
+
+
    - Single Reacher Environment                                                                                                             
    In the environment, a double-jointed arm can move to target locations. A reward of +0.1 is provided for each step that the agent's hand is in the goal location. 
    
