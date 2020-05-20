@@ -53,7 +53,7 @@ Using policy based reinforcement learning techniques to control a reacher to rea
 ## Part 2: Idea and implementation
    - Algorithm                                                                                                                                                      
    I adapted the [DDPG algorithm](https://arxiv.org/pdf/1509.02971.pdf) to solve both the single reacher environment and multiple reacher environment. 
-   While adating the algorithm, i referenced the [openai ddpg document](https://spinningup.openai.com/en/latest/algorithms/ddpg.html), the [udacity discussion](https://knowledge.udacity.com/questions/98687) (may need a udacity account to have access) and [gcolmen's github](https://github.com/gcolmen/actor-critic-ddpg) as reference.
+   While adating the algorithm, i referenced the [openai ddpg document](https://spinningup.openai.com/en/latest/algorithms/ddpg.html), the [udacity discussion](https://knowledge.udacity.com/questions/98687) (may need a udacity account to have access) and [gcolmen's github](https://github.com/gcolmen/actor-critic-ddpg) as reference. The code structure are adapted from the [udacity ddpg implementation](https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-bipedal).
    
    - Implementation detail                                                                                                               
    For detailed implementation description, see [report.pdf](https://github.com/CenturyLiu/RL-Project-Reacher/blob/master/report.pdf).
